@@ -6,6 +6,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const videoRoutes = require('./routes/videos');
 const adminRoutes = require('./routes/admin');
+const trackVisitor = require('./middleware/trackVisitor');
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(cors({
   credentials: true
 }));
 app.use(express.json());
+app.use(trackVisitor);
 
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('✅ MongoDB connected successfully'))
