@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,9 @@
     "url": "https://github.com/Sivapriyaa28/MY-PORTFOLIO/issues"
   },
   "homepage": "https://github.com/Sivapriyaa28/MY-PORTFOLIO#readme",
-  "description": "",
   "dependencies": {
     "express": "^5.2.1",
     "mongoose": "^9.4.1"
-  }
+  },
+  "description": ""
 }
